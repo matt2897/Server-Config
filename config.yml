@@ -1,0 +1,89 @@
+#config.yml - Written by Matt2897 PEX v0.1
+
+
+groups:
+    default:
+        permissions:
+            ep.help: true
+            etwTickets.create: true
+            ep.signhealuse: true
+            ep.signfeeduse: true
+            ep.singspawnuse: true
+            ep.singwarpuse: true
+            permissions.build: true
+    Member:
+        permissions:
+            ep.warplist: true
+            ep.sethome: true
+            ep.home: true
+            ep.warp: true
+            permissions.build: true
+        inheritance:
+          - 'default'
+    Donator:
+        permissions:
+            ep.joinfull: true
+            ep.singcolor: true
+            permissions.build: true
+        inheritance:
+          - 'Member'
+    Staff:
+        permissions:
+            ep.staffchat: true
+            etwTickets.close: true
+            etwTickets.selfassign: true
+            etwTickets.list: true
+            etwTickets.list.open: true
+            ep.mute: true
+            ep.unmute: true
+            ep.clearchat: true
+            ep.kick: true
+            ep.ban: true
+            mcbans.ban.local: true
+            mcbans.ban.temp: true
+            mcbans.ban.rollback: true
+            mcbans.ban.ip: true
+            mcbans.lookup.player: true
+            mcbans.lookup.ban: true
+            mcbans.kick: true
+            permissions.build: true
+        inheritance:
+          - 'Member'
+    Admin:
+        permissions:
+            etwTickets.list.all: true
+            ep.invsee: true
+            mcbans.ban.global: true
+            permissions.build: true
+        inheritance:
+          - 'Staff'
+    SuperAdmin:
+        permissions:
+            ep.fly: true
+            ep.invsee: true
+            ep.vanish: true
+            ep.unban: true
+            ep.setwarp: true
+            ep.delwarp: true
+            ep.singwarp: true
+            ep.signspawn: true
+            mcbans.unban: true
+            permissions.build: true
+        inheritance:
+          - 'Admin'
+    Developer:
+        permissions:
+            ep.joinfull: true
+            ep.singheal: true
+            ep.signfeed: true
+            ep.signspawn: true
+            ep.singwarp: true
+            mcbans.kick.exempt: true
+            mcbans.ban.exempt: true
+            permissions.build: true
+        inheritance:
+          - 'SuperAdmin'
+    Founder:
+        permissions:
+            permissions.build: true
+
